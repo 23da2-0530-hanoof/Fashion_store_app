@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-highest": "#e3e3de",
+            "surface-tint": "#2b685c",
+            "primary-fixed-dim": "#95d3c4",
+            "tertiary-fixed-dim": "#e9c349",
+            "on-tertiary-fixed-variant": "#574500",
+            "on-surface-variant": "#3f4946",
+            "on-tertiary": "#ffffff",
+            "surface-container": "#eeeee9",
+            "surface": "#fafaf5",
+            "inverse-surface": "#2f312e",
+            "secondary": "#5d5f60",
+            "error": "#ba1a1a",
+            "background": "#fafaf5",
+            "on-tertiary-fixed": "#241a00",
+            "on-tertiary-container": "#4e3d00",
+            "on-primary": "#ffffff",
+            "primary-fixed": "#b0efdf",
+            "on-secondary-fixed": "#1a1c1d",
+            "tertiary": "#735c00",
+            "on-secondary-fixed-variant": "#454748",
+            "secondary-fixed-dim": "#c6c6c7",
+            "on-primary-fixed-variant": "#095045",
+            "secondary-container": "#dfe0e0",
+            "surface-container-high": "#e8e8e3",
+            "tertiary-container": "#cca72f",
+            "outline": "#707976",
+            "on-error-container": "#93000a",
+            "surface-variant": "#e3e3de",
+            "on-surface": "#1a1c19",
+            "on-error": "#ffffff",
+            "primary-container": "#004b40",
+            "on-primary-fixed": "#00201b",
+            "tertiary-fixed": "#ffe088",
+            "primary": "#00322a",
+            "inverse-on-surface": "#f1f1ec",
+            "surface-container-low": "#f4f4ef",
+            "surface-dim": "#dadad5",
+            "outline-variant": "#bfc9c5",
+            "on-background": "#1a1c19",
+            "inverse-primary": "#95d3c4",
+            "on-primary-container": "#7dbaab",
+            "on-secondary": "#ffffff",
+            "surface-bright": "#fafaf5",
+            "secondary-fixed": "#e2e2e3",
+            "error-container": "#ffdad6",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-container": "#616364"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "fontFamily": {
+            "headline": ["Noto Serif"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .serif-text {
+      font-family: 'Noto Serif', serif;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen pb-24">
+<!-- TopAppBar Execution -->
+<header class="bg-[#fafaf5]/70 dark:bg-[#1a1c19]/70 backdrop-blur-md fixed top-0 w-full z-50">
+<div class="flex justify-between items-center px-6 h-16 w-full">
+<div class="hover:opacity-70 transition-opacity duration-300 ease-in-out">
+<span class="material-symbols-outlined text-[#00322a] dark:text-[#004b40]">menu</span>
+</div>
+<div class="text-2xl font-serif italic tracking-widest text-[#00322a] dark:text-[#fafaf5]">My Profile</div>
+<div class="hover:opacity-70 transition-opacity duration-300 ease-in-out">
+<span class="material-symbols-outlined text-[#00322a] dark:text-[#004b40]">shopping_bag</span>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-lg mx-auto">
+<!-- Profile Header Section -->
+<section class="flex flex-col items-center mb-8">
+<div class="w-24 h-24 rounded-full bg-[#00201b] flex items-center justify-center mb-6">
+<span class="text-white text-3xl font-serif">U</span>
+</div>
+<h1 class="serif-text text-3xl font-light tracking-tight text-on-surface mb-1">User</h1>
+<p class="text-sm text-on-surface-variant font-light mb-6">user@example.com</p>
+<button class="border border-[#00322a] text-[#00322a] px-8 py-2 rounded text-[10px] font-bold uppercase tracking-widest hover:bg-[#00322a] hover:text-white transition-colors duration-300">Edit Profile</button>
+</section>
+<!-- Profile Menu List -->
+<section class="space-y-1 mb-12">
+<div class="flex items-center justify-between py-5 group cursor-pointer border-b border-outline-variant/10">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">shopping_bag</span>
+<span class="text-on-surface font-light tracking-wide">My Orders</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+<div class="flex items-center justify-between py-5 group cursor-pointer border-b border-outline-variant/10">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">favorite</span>
+<span class="text-on-surface font-light tracking-wide">Wishlist</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+<div class="flex items-center justify-between py-5 group cursor-pointer border-b border-outline-variant/10">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">location_on</span>
+<span class="text-on-surface font-light tracking-wide">Shipping Addresses</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+<div class="flex items-center justify-between py-5 group cursor-pointer border-b border-outline-variant/10">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">credit_card</span>
+<span class="text-on-surface font-light tracking-wide">Payment Methods</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+<div class="flex items-center justify-between py-5 group cursor-pointer border-b border-outline-variant/10">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">settings</span>
+<span class="text-on-surface font-light tracking-wide">Settings</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+<div class="mt-8">
+<div class="flex items-center justify-between py-5 group cursor-pointer text-error hover:opacity-70 transition-opacity">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">logout</span>
+<span class="font-light tracking-wide">Log Out</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Lookbook Promo Card -->
+</main>
+<!-- BottomNavBar Execution -->
+<nav class="fixed bottom-0 left-0 w-full h-16 bg-white flex justify-around items-center border-t border-gray-100 z-50"><div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[24px] text-gray-400">home</span>
+<span class="text-[11px] mt-1 text-gray-400 font-medium">Home</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[24px] text-gray-400">shopping_bag</span>
+<span class="text-[11px] mt-1 text-gray-400 font-medium">Cart</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[24px] text-[#00201b]" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="text-[11px] mt-1 text-[#00201b] font-medium">Profile</span>
+</div></nav>
+</body></html>

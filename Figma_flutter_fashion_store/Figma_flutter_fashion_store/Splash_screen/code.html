@@ -1,0 +1,131 @@
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,600;0,700;1,700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "surface-container-highest": "#e3e3de",
+                  "surface-tint": "#2b685c",
+                  "primary-fixed-dim": "#95d3c4",
+                  "tertiary-fixed-dim": "#e9c349",
+                  "on-tertiary-fixed-variant": "#574500",
+                  "on-surface-variant": "#3f4946",
+                  "on-tertiary": "#ffffff",
+                  "surface-container": "#eeeee9",
+                  "surface": "#fafaf5",
+                  "inverse-surface": "#2f312e",
+                  "secondary": "#5d5f60",
+                  "error": "#ba1a1a",
+                  "background": "#fafaf5",
+                  "on-tertiary-fixed": "#241a00",
+                  "on-tertiary-container": "#4e3d00",
+                  "on-primary": "#ffffff",
+                  "primary-fixed": "#b0efdf",
+                  "on-secondary-fixed": "#1a1c1d",
+                  "tertiary": "#735c00",
+                  "on-secondary-fixed-variant": "#454748",
+                  "secondary-fixed-dim": "#c6c6c7",
+                  "on-primary-fixed-variant": "#095045",
+                  "secondary-container": "#dfe0e0",
+                  "surface-container-high": "#e8e8e3",
+                  "tertiary-container": "#cca72f",
+                  "outline": "#707976",
+                  "on-error-container": "#93000a",
+                  "surface-variant": "#e3e3de",
+                  "on-surface": "#1a1c19",
+                  "on-error": "#ffffff",
+                  "primary-container": "#004b40",
+                  "on-primary-fixed": "#00201b",
+                  "tertiary-fixed": "#ffe088",
+                  "primary": "#00322a",
+                  "inverse-on-surface": "#f1f1ec",
+                  "surface-container-low": "#f4f4ef",
+                  "surface-dim": "#dadad5",
+                  "outline-variant": "#bfc9c5",
+                  "on-background": "#1a1c19",
+                  "inverse-primary": "#95d3c4",
+                  "on-primary-container": "#7dbaab",
+                  "on-secondary": "#ffffff",
+                  "surface-bright": "#fafaf5",
+                  "secondary-fixed": "#e2e2e3",
+                  "error-container": "#ffdad6",
+                  "surface-container-lowest": "#ffffff",
+                  "on-secondary-container": "#616364"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.25rem",
+                  "lg": "0.5rem",
+                  "xl": "1.5rem",
+                  "full": "9999px"
+          },
+          "fontFamily": {
+                  "body": ["Inter"],
+                  "label": ["Inter"]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    .deep-green-gradient {
+      background: radial-gradient(circle at 40% 50%, #05261d 0%, #031410 100%);
+    }
+  </style>
+</head>
+<body class="bg-[#031410] text-on-background font-body overflow-hidden">
+<!-- Main Splash Canvas -->
+<main class="relative h-screen w-full flex flex-col items-center justify-center deep-green-gradient px-8 overflow-hidden">
+<!-- Background Texture Overlay -->
+<div class="absolute inset-0 opacity-10 pointer-events-none mix-blend-soft-light">
+<img alt="High fashion background texture" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7vPu_LMITaSapXwXJsk-8HAV9XIVmOZIIjvt7Vr69FzTrxuZFHGRi8M1H_aVV_JbmuCS_SQ-0iKhW8cvTKiu4LCzdsnobRTV0Rb0wFCxQUpAQhkvznWYwmgw0C3DvDNk9qFj43g1zk4uMNgggM_Uskx9P4cc4G-XazZ3kjpjdMvBwGhRwx_A7izvjaoqi9ulWkuj8g5lhuY7BuTkXeDYptCKQhLwd65DMPVW6uKOOAOWEaUGAp1RWTSz3epTSGrKBRMAUJ2PoSzsO"/>
+</div>
+<!-- Centered Brand Identity -->
+<div class="relative z-10 flex flex-col items-center">
+<!-- Upper Line -->
+<div class="w-16 h-[0.5px] bg-white/20 mb-20"></div>
+<div class="flex flex-col items-center text-center">
+<h2 class="text-white font-label text-[0.65rem] tracking-[0.5em] uppercase mb-6 font-medium">
+          The Digital
+        </h2>
+<h1 class="text-white font-label italic font-bold text-7xl md:text-8xl tracking-tight leading-[0.9] mb-1">
+          STUDIO
+        </h1>
+<h1 class="text-white font-label font-bold text-7xl md:text-8xl tracking-tight leading-[0.9]">
+          BLACK
+        </h1>
+<p class="text-white/50 font-label text-[0.55rem] md:text-[0.65rem] mt-10 tracking-[0.4em] uppercase italic">
+        High Fashion &amp; Curation
+      </p>
+</div>
+<!-- Lower Line -->
+<div class="w-16 h-[0.5px] bg-white/20 mt-20"></div>
+</div>
+<!-- Bottom Action Hint -->
+<div class="absolute bottom-12 flex flex-col items-center gap-8 w-full">
+<div class="flex flex-col items-center w-full max-w-xs">
+<!-- Enter Collection Button -->
+<button class="w-full bg-white/5 backdrop-blur-md border border-white/10 text-white px-8 py-5 rounded-full text-xs uppercase tracking-[0.2em] font-medium hover:bg-white/10 transition-all duration-500 ease-in-out group mb-10 flex items-center justify-center gap-3">
+          Enter Collection
+          <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform duration-300" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<span class="text-white/20 text-[0.55rem] uppercase tracking-[0.4em] font-light">
+          Establishment 2026
+        </span>
+</div>
+</div>
+<!-- Decorative Corner Elements (Inherited from original for extra polish) -->
+<div class="absolute top-8 left-8 border-t border-l border-white/5 w-12 h-12"></div>
+<div class="absolute top-8 right-8 border-t border-r border-white/5 w-12 h-12"></div>
+<div class="absolute bottom-8 left-8 border-b border-l border-white/5 w-12 h-12"></div>
+<div class="absolute bottom-8 right-8 border-b border-r border-white/5 w-12 h-12"></div>
+</main>
+</body></html>

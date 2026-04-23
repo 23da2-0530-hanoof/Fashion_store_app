@@ -1,0 +1,145 @@
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-highest": "#e3e3de",
+                    "surface-tint": "#2b685c",
+                    "primary-fixed-dim": "#95d3c4",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "on-surface-variant": "#3f4946",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#eeeee9",
+                    "surface": "#fafaf5",
+                    "inverse-surface": "#2f312e",
+                    "secondary": "#5d5f60",
+                    "error": "#ba1a1a",
+                    "background": "#fafaf5",
+                    "on-tertiary-fixed": "#241a00",
+                    "on-tertiary-container": "#4e3d00",
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#b0efdf",
+                    "on-secondary-fixed": "#1a1c1d",
+                    "tertiary": "#735c00",
+                    "on-secondary-fixed-variant": "#454748",
+                    "secondary-fixed-dim": "#c6c6c7",
+                    "on-primary-fixed-variant": "#095045",
+                    "secondary-container": "#dfe0e0",
+                    "surface-container-high": "#e8e8e3",
+                    "tertiary-container": "#cca72f",
+                    "outline": "#707976",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#e3e3de",
+                    "on-surface": "#1a1c19",
+                    "on-error": "#ffffff",
+                    "primary-container": "#004b40",
+                    "on-primary-fixed": "#00201b",
+                    "tertiary-fixed": "#ffe088",
+                    "primary": "#00322a",
+                    "inverse-on-surface": "#f1f1ec",
+                    "surface-container-low": "#f4f4ef",
+                    "surface-dim": "#dadad5",
+                    "outline-variant": "#bfc9c5",
+                    "on-background": "#1a1c19",
+                    "inverse-primary": "#95d3c4",
+                    "on-primary-container": "#7dbaab",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#fafaf5",
+                    "secondary-fixed": "#e2e2e3",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-container": "#616364"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1.5rem",
+                    "2xl": "2rem",
+                    "3xl": "3rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        body {
+            min-height: 100dvh;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-background fixed top-0 w-full z-50 flex items-center px-4 h-16 border-b border-outline-variant/10">
+<div class="w-10 h-10 flex items-center justify-start cursor-pointer">
+<span class="material-symbols-outlined text-on-surface">arrow_back</span>
+</div>
+<h1 class="flex-grow text-center font-headline text-xl font-semibold text-on-surface">Shopping Cart</h1>
+<div class="w-10 h-10"></div> <!-- Spacer for centering -->
+</header>
+<main class="pt-20 px-6 flex-grow">
+<!-- Cart Item -->
+<section class="mt-4">
+<div class="flex gap-4 items-start relative">
+<!-- Product Image -->
+<div class="w-24 h-28 flex-shrink-0 overflow-hidden rounded-lg bg-surface-container">
+<img alt="Leather Handbag" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uhtcj3-Yipw3Nfa77HsSMHPlMpkn56Fj7FQh3B30zlPab7iqNgM_h4xzHlYUME-hO2o2T_HGdeehSor5OyQ-tywzrkABJuTlBmSTUgtxmk1KRSEik6nwRV0Zk2VTwA3cTQK_08rdXVPozMoGCn3wmQS1R0a8qlg8YScHimydxrTmbcF-sKbJJsG7CVfksaVxuwuIjmn5QggV0YWfhYfZhlsQMkZhBMioxBIvJxvVuZPNwB0oO6Siu5R5e6nWdTivQ0371G7flGrxj4"/>
+</div>
+<!-- Product Details -->
+<div class="flex-grow flex flex-col gap-1">
+<h2 class="font-semibold text-on-surface">Leather Handbag</h2>
+<p class="text-sm text-on-surface-variant">Size: M</p>
+<p class="font-semibold text-on-primary-fixed-variant mt-1">LKR 450.00</p>
+<!-- Quantity Control -->
+<div class="flex items-center gap-3 mt-2">
+<button class="w-6 h-6 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="text-sm">1</span>
+<button class="w-6 h-6 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+<!-- Remove Button -->
+<button class="absolute top-0 right-0 p-1">
+<span class="material-symbols-outlined text-on-surface-variant">close</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Bottom Summary & Action -->
+<footer class="bg-background border-t border-outline-variant/20 px-6 py-6 space-y-4">
+<div class="flex justify-between text-sm text-on-surface-variant">
+<span>Subtotal</span>
+<span>LKR 450.00</span>
+</div>
+<div class="flex justify-between text-sm text-on-surface-variant">
+<span>Shipping</span>
+<span>Free</span>
+</div>
+<div class="pt-4 border-t border-outline-variant/50 flex justify-between items-center">
+<span class="text-lg font-bold text-on-surface">Total</span>
+<span class="text-xl font-bold text-on-primary-fixed-variant">LKR 450.00</span>
+</div>
+<button class="w-full bg-primary-container text-on-primary py-4 rounded-lg font-bold tracking-wider text-sm mt-4">
+            PROCEED TO CHECKOUT
+        </button>
+</footer>
+</body></html>

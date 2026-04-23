@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e3e3de",
+                        "surface-tint": "#00322a",
+                        "primary-fixed-dim": "#95d3c4",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "on-surface-variant": "#6b7280",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#f8f8f4",
+                        "surface": "#f8f8f4",
+                        "inverse-surface": "#2f312e",
+                        "secondary": "#5d5f60",
+                        "error": "#ba1a1a",
+                        "background": "#f8f8f4",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-tertiary-container": "#4e3d00",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#b0efdf",
+                        "on-secondary-fixed": "#1a1c1d",
+                        "tertiary": "#735c00",
+                        "on-secondary-fixed-variant": "#454748",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "on-primary-fixed-variant": "#095045",
+                        "secondary-container": "#dfe0e0",
+                        "surface-container-high": "#f1f1ec",
+                        "tertiary-container": "#cca72f",
+                        "outline": "#707976",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#f1f1ec",
+                        "on-surface": "#111827",
+                        "on-error": "#ffffff",
+                        "primary-container": "#004b40",
+                        "on-primary-fixed": "#00201b",
+                        "tertiary-fixed": "#ffe088",
+                        "primary": "#00322a",
+                        "inverse-on-surface": "#f1f1ec",
+                        "surface-container-low": "#fcfcf9",
+                        "surface-dim": "#dadad5",
+                        "outline-variant": "#d1d5db",
+                        "on-background": "#111827",
+                        "inverse-primary": "#95d3c4",
+                        "on-primary-container": "#7dbaab",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#f8f8f4",
+                        "secondary-fixed": "#e2e2e3",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#616364"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f4;
+        }
+        .serif-headline {
+            font-family: 'Noto Serif', serif;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed">
+<main class="min-h-screen flex flex-col items-center pt-8 px-6">
+<!-- Top Nav Text -->
+<div class="w-full text-center mb-20">
+<span class="text-sm font-medium tracking-tight text-on-surface">Login</span>
+</div>
+<div class="w-full max-w-md flex flex-col items-center text-center space-y-2 mb-12">
+<h1 class="text-3xl md:text-4xl serif-headline font-bold text-on-surface">Welcome Back</h1>
+<p class="text-on-surface-variant/70 text-sm">Enter your credentials to continue</p>
+</div>
+<section class="w-full max-w-md">
+<form class="space-y-4">
+<!-- Email Input -->
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">mail</span>
+</div>
+<input class="w-full bg-surface-container-low border border-outline-variant/30 rounded-lg py-4 pl-12 pr-4 focus:ring-1 focus:ring-primary focus:border-primary transition-all duration-300 placeholder:text-on-surface-variant/40 font-light text-on-surface" placeholder="Email" type="email"/>
+</div>
+<!-- Password Input -->
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">lock</span>
+</div>
+<input class="w-full bg-surface-container-low border border-outline-variant/30 rounded-lg py-4 pl-12 pr-12 focus:ring-1 focus:ring-primary focus:border-primary transition-all duration-300 placeholder:text-on-surface-variant/40 font-light text-on-surface" placeholder="Password" type="password"/>
+<button class="absolute inset-y-0 right-4 flex items-center" type="button">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">visibility_off</span>
+</button>
+</div>
+<!-- Login Button -->
+<div class="pt-6">
+<button class="w-full bg-[#00322a] text-white py-4 rounded-lg flex items-center justify-center transition-all duration-300 hover:opacity-90">
+<span class="text-sm uppercase tracking-[0.1em] font-bold">LOGIN</span>
+</button>
+</div>
+<!-- Register Link -->
+<div class="pt-6 text-center">
+<a class="text-sm text-[#00322a] font-semibold hover:underline" href="#">
+                        Don't have an account? Register
+                    </a>
+</div>
+</form>
+</section>
+<!-- Footer -->
+</main>
+<!-- Semantic Shell Suppression Rule: 
+         This is a transactional page (Login). 
+         Main navigation and FAB are suppressed to maintain focus. 
+    -->
+</body></html>
